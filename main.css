@@ -16,12 +16,13 @@
 }
 
 .nav li {
+  display: inline;
   float: center;
 }
 
 .nav li a{
   color: LightGray;
-  display: inline;
+  display: block;
   padding: 14px 16px;
   text-decoration: none;
   border-right: 1px solid LightGray;

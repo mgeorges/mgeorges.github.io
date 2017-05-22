@@ -17,6 +17,6 @@
 
 .nav li {
   color: White;
-  display: block;
+  display: inline;
   border-right: 1px;
 }

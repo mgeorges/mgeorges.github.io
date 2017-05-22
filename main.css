@@ -56,7 +56,7 @@ h1 {
 #home {
   margin-left: 25;
   margin-right: 25;
-  background-color: rgba(211, 211, 211, 25%);
+  background: rgba(211, 211, 211, 25%);
 }
 
 #name {
@@ -70,4 +70,7 @@ h2#title {
   padding-top: 75px;
   font-size: 200%;
 }
-  
+
+#bio {
+  background: White;
+}

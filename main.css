@@ -1,5 +1,6 @@
 * {
   font-family: 'Andika', sans-serif;
+  border: 2px solid black;
 }
 
 body {
@@ -46,16 +47,6 @@ h1 {
   text-align: center;
   padding-top: 200px;
   font-size: 300%;
-}
-
-#home {
-  background: url("http://blog.collegegreenlight.com/blog/wp-content/uploads/2015/12/PFC_case.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
 }
 
 #name {

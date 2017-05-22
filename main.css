@@ -10,7 +10,7 @@
   top: 0;
   width: 100%;
   text-align: center;
-  background-color: Maroon;
+  background-color: hsl(0, 0%, 25%);
   display: inline-block;
   z-index: 1;
 }
@@ -18,11 +18,11 @@
 .nav li {
   display: inline;
   float: center;
-  border-right: 1px solid LightGray;
+  border-right: 1px solid Black;
 }
 
 .nav li a{
-  color: LightGray;
+  color: White;
   display: inline;
   padding: 14px 16px;
   text-decoration: none;
@@ -30,6 +30,10 @@
 
 .nav li:last-child {
   border-right: none;
+}
+
+.nav li a:hover {
+  background-color: Black;
 }
 
 h1 {

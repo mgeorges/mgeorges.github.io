@@ -48,6 +48,13 @@ h1 {
   font-size: 300%;
 }
 
+#home {
+  background: url("http://blog.collegegreenlight.com/blog/wp-content/uploads/2015/12/PFC_case.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
 #name {
   font-size: 400%;
   font-family: Laila, sans-serif;

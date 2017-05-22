@@ -10,11 +10,12 @@
   top: 0;
   width: 100%;
   text-align: center;
-  background-color:#1a1a1a;
+  background-color: Gray;
   display: inline-block;
   z-index: 1;
 }
 
 .nav li {
+  color: White;
   display: block;
 }

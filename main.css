@@ -18,6 +18,7 @@
 .nav li {
   display: inline;
   float: center;
+  border-right: 1px solid LightGray;
 }
 
 .nav li a{
@@ -25,7 +26,6 @@
   display: inline;
   padding: 14px 16px;
   text-decoration: none;
-  border-right: 1px solid LightGray;
 }
 
 .nav li:last-child {

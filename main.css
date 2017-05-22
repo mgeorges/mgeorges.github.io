@@ -4,11 +4,6 @@
 
 body {
   margin: 0;
-  background: url("http://blog.collegegreenlight.com/blog/wp-content/uploads/2015/12/PFC_case.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .nav {
@@ -54,9 +49,13 @@ h1 {
 }
 
 #home {
-  margin-left: 25;
-  margin-right: 25;
-  background: rgba(211, 211, 211, 25%);
+  background: url("http://blog.collegegreenlight.com/blog/wp-content/uploads/2015/12/PFC_case.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 #name {

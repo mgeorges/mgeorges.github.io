@@ -19,7 +19,7 @@
 .nav li {
   display: inline;
   float: center;
-  border-right: 1px solid Black;
+  border-right: 3px solid Black;
 }
 
 .nav li a{
@@ -42,6 +42,11 @@ h1 {
   text-align: center;
   padding-top: 200px;
   font-size: 300%;
+}
+
+#name {
+  font-size: 400%;
+  font-family: Laila, sans-serif;
 }
 
 h2 {

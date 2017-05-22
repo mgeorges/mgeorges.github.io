@@ -27,7 +27,7 @@
   border-right: 1px solid LightGray;
 }
 
-.nav li#last-child {
+.nav li:last-child {
   border-right: none;
 }
 

@@ -16,7 +16,18 @@
 }
 
 .nav li {
+  float: center;
+}
+
+.nav li a{
   color: LightGray;
   display: inline;
-  border-right: 1px;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid LightGray;
 }
+
+.nav li#last-child {
+  border-right: none;
+}
+

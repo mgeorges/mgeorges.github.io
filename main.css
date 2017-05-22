@@ -50,7 +50,7 @@ h1 {
   border-bottom: 4px solid Black;
 }
 
-h2 {
+h2#title {
   text-align: center;
   padding-top: 75px;
   font-size: 200%;

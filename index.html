@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Markos Georges</title>
-    <link href="https://fonts.googleapis.com/css?family=Andika|Cabin|Laila" rel="stylesheet">
-    <link href="/main.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Andika|Cabin|Laila|Ubuntu|Muli" rel="stylesheet">
+    <link href="./main.css" type="text/css" rel="stylesheet">
   </head>
   <body>
       <ul class="nav">
@@ -14,40 +14,207 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#interests">Interests</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     
     <div id="home">
-      <h1 id="name">Markos Georges</h1>
-      <h2>Software Developer</h2>
+      <div class="header-box">
+        <h1 id="name">Markos Georges</h1>
+        <h2>Software Developer</h2>
+      </div>
     </div>
     
-    <div id="bio">
+    <div id="bio" class="section odd">
       <h2 id="title">Bio</h2>
+      <div class=bio-parts>
+        <div class="left-bio">
+          <h3>The Basics</h3>
+          <p class="field">Name:</p>
+          <p class="attr">Markos Georges</p>
+          <p class="field">Age:</p>
+          <p class="attr">23</p>
+          <p class="field">Location:</p>
+          <p class="attr last">Philadelphia, PA</p>
+        </div>
+        <div class="mid-bio">
+          <img src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png">
+          <p class="quote">"Winning isn't everything - but making the effort to win is."</p>
+          <p align="Right">-Vince Lombardi</p>
+        </div>
+        <div class="right-bio">
+          <h3>More About Me</h3>
+          <p>I am a motivated and enthusiastic well-rounded individual with a can-do attitude, a passion for programming, and a knack for breaking down and solving problems. As a graduate from a top liberal arts university, with a major Computer Science and a minor in History, I have acquired a diverse set of critical-thinking, and analytical problem-solving skills. With my balance of technical and non-technical skills and depth of conceptual knowledge I am confident that I can accomplish any task and solve any problem I am faced with.</p>
+          <p>Whether it be through enhancing my current knowledge and skills, or trying out something entirely new, I am dedicated to learning something new everyday. I'm the type of guy who will try anything once. Check out my <a href="#interests">interests</a> to get a better idea for the things I enjoy doing and a bucket list of some stuff I hope to accomplish.</p>
+        </div>
+      </div>
     </div>
-    
-    <div id="experience">
+
+    <div id="experience" class="section even">
       <h2 id="title">Experience</h2>
+      <ul class="table exp">
+        <li>
+          <div class="row">
+            <div class="left">
+              <h4 id="workplace">Bank of America Merrill Lynch</h4>
+              <p id="position">Consulting Software Developer</p>
+              <p id="duration">September 2015 - March 2017</p>
+              <img src="http://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-Bank-of-America-Logo-PNG-Transparent-1.png">
+            </div>
+            <div class="right">
+              <p id="location">New York City, NY</p>
+              <p id="head">Responsibilities</p>
+              <ul>
+                <li>Actively participated throughout the agile JIRA software development lifecycle</li>
+                <li>Coordinated overlapping release changes with team members</li>
+                <li>Provided unit and integration testing evidence in development and User Acceptance Testing environments</li>
+                <li>Communicated the nature and scope of code release changes and requirements to SDLC stakeholders</li>
+                <li>Analyzed database logs to capture schema usage, evaluate performance, and offer technical solutions to issues</li>
+                <li>Managed and prioritized multiple projects</li>
+                <li>Provided accurate estimations of the time required to complete each project</li>
+                <li>Developed and maintained ETL report APIs for multiple databases</li>
+                <li>Provided relevant API testing framework complete with process and test flow documentation</li>
+                <li>Generated custom SQL queries to ensure data integrity and availability for application users</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="left">
+              <h4 id="workplace">FDM Group</h4>
+              <p id="position">Software Development Consultant</p>
+              <p id="duration">August 2015 - April 2017</p>
+              <img src="http://www.jobs.ie/FDM-Group/logos/fdm-group-2586953.png">
+            </div>
+            <div class="right">
+              <p id="location">New York City, NY</p>
+              <p id="head">Responsibilities</p>
+              <ul>
+                <li>Completed rigorous training program at the New York office prior to on-site work at <i>Bank of America</i></li>
+                <li>Communicated progress of personal projects and learning initiatives to Account Managers and Technical Instructors</li>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="left">
+              <h4 id="workplace">JKRP Architects</h4>
+              <p id="position">Administrative/Marketing Intern</p>
+              <p id="duration">Summer 2012, 2013, 2014</p>
+              <img src="https://jkrparchitects.com/wp-content/themes/jkrp-architects/img/fb-share.jpg">
+            </div>
+            <div class="right">
+              <p id="location">Philadelphia, PA</p>
+              <p id="head">Responsibilities</p>
+              <ul>
+                <li>Catalogued, organized and migrated all architectural projects onto a digital archive</li>
+                <li>Created and updated project, client, and internal administrative spreadsheets and databases</li>
+                <li>Produced and delivered status reports to the partners, contacts and clients involved in each project</li>
+                <li>Revised and edited architectural specs before distribution to clients and contractors</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
     
-    <div id="education">
+    <div id="education" class="section odd">
       <h2 id="title">Education</h2>
+      <ul class="table edu">
+        <li>
+          <div class=" edu row">
+            <div class="left">
+              <h4 id="edu">Continued Education</h4>
+              <p id="duration" class="edu">April 2017 - present</p>
+            </div>
+            <div class="right">
+              <p class="desc">I have continued my technical education through online learning resources and taking on the building of small coding projects. The best way for me to learn is by doing.</p>
+              <p class="desc">I have improved my HTML5 and CSS skills through codecademy.com and started learning JavaScript and the JQuery API through codeschool.com before applying these skills to building my own coding projects.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="edu row">
+            <div class="left">
+              <h4 id="edu">FDM Training</h4>
+              <p id="duration" class="edu">August 2015 - September 2015</p>
+            </div>
+            <div class="right">
+              <p id="location">New York City, NY</p>
+              <p id="head">Courses</p>
+              <ul>
+                <li>Completed 40 hours of professional writing and presentation skills training. This included writing a SWAT business analysis</li>
+                <li>Completed 40 hours of PL/SQL training and the required skill examination. This training was conducted through Oracle.</li>
+                <li>Completed 40 hours of Python training and the required skill examination.</li>
+                <li>Completed 40 hours of UNIX scripting training and a final project.</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="edu row">
+            <div class="left">
+              <h4 id="edu">Colgate University</h4>
+              <p id="position" class="edu"><b>Bachelor of Arts</b></p>
+              <p id="duration" class="edu"><b>Major: </b>Computer Science<br>
+              <b>Minor: </b>History</p>
+              <p id="duration" class="edu">August 2011 - May 2015</p>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Colgate_University_Seal.svg/1200px-Colgate_University_Seal.svg.png" class="colgate">
+            </div>
+            <div class="right">
+              <p id="location">Hamilton, NY</p>
+              <p id="head">Relavent Coursework</p>
+              <ul class="courses">
+                <li>&bull;Intro to Computing I, Lab (Python)</li>
+                <li>&bull;Intro to Computing II: Data Structures, Lab (Java)</li>
+                <li>&bull;Discreet Structures, Lab (Haskell)</li>
+                <li>&bull;Computer Organization, Lab (MIPS Assembly Language)</li>
+                <li>&bull;Operating Systems, Lab (Objective C)</li>
+                <li>&bull;Analysis of Algorithms, Lab</li>
+                <li>&bull;Computer Networks, Lab (Python)</li>
+                <li>&bull;Theory of Computing, Lab (Haskell)</li>
+                <li>&bull;Database Management Systems, Lab (Java, SQL)</li>
+                <li>&bull;Topics: Cloud Computing - Software Engineering for the Cloud(Ruby on Rails, HTML5, CSS)</li>
+              </ul>
+              <p id="head">History Senior Thesis: </p>
+              <p class="thesis">The Gambler and the Sportsman - How They Survived Moral Opposition and Classist Aggression</p>
+              <p class="desc">While at Colgate I was involved in a number groups and organizations and took on a number of jobs both on and off campus. I was a brother of the Sigma Chi Fraternity, a member of the Men's Club Soccer team and the Ski and Snowboard Club, and I worked as a Library Student Assistant, Reunion Tent Staff member, First-Year Welcoming Staff, and Head Official of IM Softball and Flag Football (competing in many of the offered intramural sports). Off-campus, I worked for <i>Screen-It</i>, the local t-shirt printing company.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="edu row">
+            <div class="left">
+              <h4 id="edu">Audubon High School</h4>
+              <p id="position" class="edu"><b>High School Diploma</b></p>
+              <p id="duration" class="edu">September 2007 - June 2011</p>
+            </div>
+            <div class="right">
+              <p id="location">Audubon, NJ</p>
+              <p class="desc">In high school my focus was on Math and Science. I took solely AP and Honors level classes. I was a part of the National Honor Society, Math Honor Society, School Council, and chosen to attend the New Jersey Boys' State. I competed on the varsity soccer, wrestling, and track teams. Outside of high school, I played with the South Jersey Elite Barons Club soccer program.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
     
-    <div id="skills">
+    <div id="skills" class="section even">
       <h2 id="title">Skills</h2>
     </div>
     
-    <div id="projects">
+    <div id="projects" class="section odd">
       <h2 id="title">Projects</h2>
     </div>
     
-    <div id="interests">
+    <!-- include a bucket list in interests-->
+    <div id="interests" class="section even last-section">
       <h2 id="title">Interests</h2>
     </div>
     
-    <div id="contact">
-      <h2 id="title">Contact</h2>
+    <div class="podbar">
+      <ul class="contact">
+        <li>Email: <a href="mailto:markosgeorges@gmail.com">markosgeorges@gmail.com</a></li>
+        <li>Phone: <a href="#">1(609)922-4170</a></li>
+      </ul>
     </div>
   </body>
 </html>

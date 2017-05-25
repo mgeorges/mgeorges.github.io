@@ -57,9 +57,9 @@ if (!String.prototype.repeat) {
 
 function roman_numeral_to_integer(number){
 	var conversion_dict = {'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1};
-	var md = new Array('M', 'D');
-	var cl = new Array('C', 'L');
-	var xv = new Array('X', 'V');
+	var md = ['M', 'D'];
+	var cl = ['C', 'L'];
+	var xv = ['X', 'V'];
 		
 	var roman_numeral = number.toUpperCase();
 	var result_int = 0;
@@ -81,7 +81,7 @@ function roman_numeral_to_integer(number){
 			}
 		}
 		else {
-			return roman_numeral + " is not a valid set of roman numerals";
+			return "ERROR: " + roman_numeral + " is not a valid set of roman numerals";
 		}
 	}
 	return result_int;
@@ -97,70 +97,13 @@ function RomanToIntConversion(){
 
 $("button#rnToInt-btn").on('click', RomanToIntConversion());
 
-/*Bit to Integer Conversion*/
-
-function bit_to_integer(bits) {
-	var bit_string = bits;
-	var io = new Array('1', '0');
-	var bit_pos = bit_string.length;
-	var result_int = 0;
-	
-	for (var i = 0; i < bit_string.length; i++){
-		bit_pos--;
-		
-		if (bit_string[i] == '1'){
-			result_int += Math.pow(2, bit_pos);
-		}
-		else if (bit_string[i] == '0'){
-			continue;
-		}
-		else {
-			return "ERROR: " + bits + " is an invalid bit string. Try again.";
-		}
-	}
-	return result_int;
-}
-
-function BitToIntConversion() {
-	$("button#bitToInt-btn").on('click', function(){
-		var bits = document.getElementById("bitToInt-input").value;
-		var output = document.getElementById("bitToInt-output");
-		output.innerHTML = bit_to_integer(bits);
-	});
-}
-
-$("button#bitToInt-btn").on('click', BitToIntConversion());
-
-/*Integer to Bit Conversion*/
-
-function integer_to_bit(int) {
-	var result_string = '';
-	var comp_int = int;
-	while (comp_int > 0){
-		var bit = comp_int % 2;
-		result_string = bit.toString() + result_string;
-		comp_int = Math.floor(comp_int / 2);
-	}
-	return result_string;
-}
-
-function IntToBitsConversion() {
-	$("button#intToBit-btn").on('click', function(){
-		var int = document.getElementById("intToBit-input").value;
-		var output = document.getElementById("intToBit-output");
-		output.innerHTML = integer_to_bit(int);
-	});
-}
-
-$("button#intToBit-btn").on('click', IntToBitsConversion());
-
 /*Integer to Roman Numeral Conversion*/
+
 function integer_to_roman_numeral(number){
 	var num_conversion_dict = {1000: 'M', 500: 'D', 100: 'C', 50: 'L', 10: 'X', 5: 'V', 1: 'I'};
 	var int_num = number;
 	var powers = [1000, 100, 10, 1];
 	var result_rn = '';
-	
 	if (number > 3999) {
 		return "ERROR: " + number + " is too large to be converted to Roman Numerals. Must be less than 3999. Try again";
 	}
@@ -201,10 +144,78 @@ function integer_to_roman_numeral(number){
 
 function IntToRomanConversion(){
 	$("button#intToRn-btn").on('click', function(){
-		var inty = document.getElementById("intToRn-input");
+		var inty = document.getElementById("intToRn-input").value;
 		var output = document.getElementById("intToRn-output");
 		output.innerHTML = integer_to_roman_numeral(inty);
 	});
 }
 
 $("button#intToRn-btn").on('click', IntToRomanConversion());
+
+/*Binary to Integer Conversion*/
+
+function binary_to_integer(bits) {
+	var bit_string = bits;
+	var io = new Array('1', '0');
+	var bit_pos = bit_string.length;
+	var result_int = 0;
+	
+	for (var i = 0; i < bit_string.length; i++){
+		bit_pos--;
+		
+		if (bit_string[i] == '1'){
+			result_int += Math.pow(2, bit_pos);
+		}
+		else if (bit_string[i] == '0'){
+			continue;
+		}
+		else {
+			return "ERROR: " + bits + " is an invalid bit string. Try again.";
+		}
+	}
+	return result_int;
+}
+
+function BinaryToIntConversion() {
+	$("button#binToInt-btn").on('click', function(){
+		var binary = document.getElementById("binToInt-input").value;
+		var output = document.getElementById("binToInt-output");
+		output.innerHTML = binary_to_integer(binary);
+	});
+}
+
+$("button#binToInt-btn").on('click', BinaryToIntConversion());
+
+/*Integer to Binary Conversion*/
+
+function integer_to_binary(int) {
+	var result_string = '';
+	var comp_int = Math.abs(int);
+	if (int == 0){
+		return '0';
+	}
+
+	while (comp_int > 0){
+		var bit = comp_int % 2;
+		result_string = bit.toString() + result_string;
+		comp_int = Math.floor(comp_int / 2);
+	}
+	if (int < 0) {
+		result_string = '1-' + result_string;
+	}
+	else {
+		result_string = '0-' + result_string;
+	}
+	return result_string;
+}
+
+function IntToBinaryConversion() {
+	$("button#intToBin-btn").on('click', function(){
+		var int = document.getElementById("intToBin-input").value;
+		var output = document.getElementById("intToBin-output");
+		output.innerHTML = integer_to_binary(int);
+	});
+}
+
+$("button#intToBin-btn").on('click', IntToBinaryConversion());
+

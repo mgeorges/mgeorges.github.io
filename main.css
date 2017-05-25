@@ -53,8 +53,8 @@ body {
   border: none;
   font-family: 'Laila', sans-serif;
   text-align: center;
-  margin: 200px 30% 400px 30%;
-  /*background-color: rgba(211, 211, 211, .5);*/
+  /*margin: 200px 30% 400px 30%;*/
+  padding: 200px 30% 400px 30%;
   border-radius: 50px;
   min-height: 100px;
   min-width: 600px;
@@ -88,7 +88,7 @@ h2#title {
 
 .section {
   margin: 0px 30px 30px 30px;
-  border-radius: 25px;
+  /*border-radius: 25px;*/
   min-width: 1000px;
 }
 
@@ -98,12 +98,12 @@ h2#title {
 
 .odd {
   /*background: rgba(255, 240, 179, .75);*/
-  background: rgba(173, 216, 230, .85);
+  background: rgba(173, 216, 230, .6);
   color: Black;
 }
 
 .even {
-  background: rgba(255, 255, 255, .75);
+  background: rgba(255, 255, 255, .6);
   /*background: rgba(70, 130, 180, .85);*/
   color: Black;
 }
@@ -298,6 +298,75 @@ img.colgate {
   border-radius: none;
   height: 250px;
   width: 250px;
+}
+
+div.skills {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+}
+
+div.col {
+  display: inline-block;
+  width:50%;
+  padding: 10px 5%;
+  text-align: center;
+}
+
+.col h4 {
+  margin: 0px 10% 20px 10%;
+  font-weight: bold;
+  font-size: 150%;
+  padding: 5px;
+  border-bottom: 1px solid Black;
+}
+
+.col p {
+  font-size: 110%
+}
+
+.proj {
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 25px;
+  margin: 10px 5%;
+  text-align: left;
+}
+p.proj {
+  line-height: 1.35em;
+  margin: 10px 15%;
+}
+
+.proj a {
+  text-decoration: none;
+  font-style: italic;
+  letter-spacing: .1em;
+  color: Maroon;
+}
+
+.proj a:hover {
+  color: Orange;
+}
+
+.converters {
+  display: flex;
+}
+
+.conv {
+  width: 50%;
+  display: inline-block;
+  margin: 10px;
+  border: 2px solid Maroon;
+  border-radius: 10px;
+}
+
+.conv h2 {
+  margin: 5px 5%;
+}
+.single-conv {
+  vertical-align: top;
+  text-align: center;
+  display: inline-block;
+  width: 49%;
+  margin: 0;
 }
 
 .contact {

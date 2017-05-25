@@ -336,17 +336,6 @@ p.proj {
   margin: 10px 15%;
 }
 
-.proj a {
-  text-decoration: none;
-  font-style: italic;
-  letter-spacing: .1em;
-  color: Purple;
-}
-
-.proj a:hover {
-  color: Orange;
-}
-
 .converters {
   display: flex;
 }

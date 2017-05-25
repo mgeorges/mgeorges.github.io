@@ -238,18 +238,19 @@
         <p class="proj">While at Colgate, I was a part of a team that built a heroku web application project called <a href="groupbuyproject.herokuapp.com/"><b>GroupBuy!</b></a>. In addition to this, I have built terminal commands, shell scripting in UNIX, that allows for the safe removal and restoration of files, this website, and the following conversion calculators.</p>
         <div class='converters'>
           <div class='conv'>
-            <h2 align="center">Bit Converter</h2>
+            <h2 align="center">Binary Converter</h2>
             <div class='single-conv'>
               <p>Enter an integer: </p>
-              <input type="number" name="int-bit" placeholder="Integer" id='intToBit-input'>
-              <button id='intToBit-btn'>Convert</button>
-              <p id='intToBit-output'></p>
+              <input type="number" name="int-bit" placeholder="Integer" id='intToBin-input'>
+              <button id='intToBin-btn'>Convert</button>
+              <p class='note'>*Note: The preceding the bit will be 0 if the integer is positive and 1 if the integer is negative</p>
+              <p id='intToBin-output' class='answer'></p>
             </div>
             <div class='single-conv'>
               <p>Enter a string of bits: </p>
-              <input type="text" name="bit-string" placeholder="Bit String" id='bitToInt-input'>
-              <button id='bitToInt-btn'>Convert</button>
-              <p id='bitToInt-output'></p>
+              <input type="text" name="binary-string" placeholder="Bit String" id='binToInt-input'>
+              <button id='binToInt-btn'>Convert</button>
+              <p id='binToInt-output' class='answer'></p>
             </div>
           </div>
           <div class='conv leftie'>
@@ -258,13 +259,13 @@
               <p>Enter a Roman Numeral string:</p>
               <input type="text" name="roman-numeral" placeholder="Roman Numeral" id="rnToInt-input">
               <button id='rnToInt-btn'>Convert</button>
-              <p id='rnToInt-output'></p>
+              <p id='rnToInt-output' class='answer'></p>
             </div>
             <div class='single-conv'>
               <p>Enter an Integer: </p>
               <input type="number" name="int-rn" placeholder="Integer" id="intToRn-input">
               <button id='intToRn-btn'>Convert</button>
-              <p id="intToRn-output"></p>
+              <p id="intToRn-output" class='roman answer'></p>
             </div>
           </div>
         </div>

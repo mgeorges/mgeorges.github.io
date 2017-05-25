@@ -22,7 +22,7 @@ body {
   width: 100%;
   overflow: hidden;
   text-align: center;
-  background-color: Maroon;
+  background-image: -webkit-linear-gradient(#737373, #000000);
   display: inline-block;
   z-index: 1;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 .nav li a:hover {
-  background-color: Black;
+  background-image: -webkit-linear-gradient(#737373, Purple);
 }
 
 .header-box {
@@ -70,7 +70,7 @@ body {
 
 #name {
   font-size: 400%;
-  border-bottom: 2px solid Black;
+  border-bottom: 2px solid Purple;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 0;
@@ -79,9 +79,9 @@ body {
 h2#title {
   font-family: 'Andika', sans-serif;
   text-align: center;
-  margin: 25px 10% 10px 10%;
+  margin: 25px 35% 10px 35%;
   padding-top: 25px;
-  border-bottom: 2px solid Maroon;
+  border-bottom: 2px solid Purple;
   font-size: 300%;
   letter-spacing: .15em;
 }
@@ -125,7 +125,6 @@ h2#title {
   text-align: center;
   font-size: 170%;
   margin: 0 15% 10px 15%;
-  border-bottom: 1.5px solid Black;
 }
 .left-bio p {
   margin: 0px 20% 20px 20%; 
@@ -145,11 +144,10 @@ h2#title {
   display: inline-block;
 }
 .mid-bio img {
-  margin: auto;
-  margin-bottom: 10px;
+  margin: 10px auto;
   display: block;
-  border: 3px solid Orange;
-  border-radius: 60px;
+  border: 2px solid Black;
+  border-radius: 75px;
   height: 250px;
   width: 250px;
 }
@@ -161,8 +159,9 @@ h2#title {
 }
 
 .mid-bio p.quote {
+  margin-top: 20px;
   padding-top: 5px;
-  border-top: 1.5px solid Black;
+  border-top: 1px solid Black;
 }
 
 .right-bio {
@@ -339,7 +338,7 @@ p.proj {
   text-decoration: none;
   font-style: italic;
   letter-spacing: .1em;
-  color: Maroon;
+  color: Purple;
 }
 
 .proj a:hover {
@@ -354,7 +353,7 @@ p.proj {
   width: 50%;
   display: inline-block;
   margin: 10px;
-  border: 2px solid Maroon;
+  border: 2px solid Purple;
   border-radius: 10px;
 }
 
@@ -374,7 +373,7 @@ button {
   font-weight: bold;
   padding-bottom: 4px;
   letter-spacing: .1em;
-  border: 2px solid Maroon;
+  border: 2px solid Purple;
 }
 
 button:active {
@@ -405,7 +404,7 @@ p.note {
   width: 100%;
   overflow: hidden;
   text-align: center;
-  background-color: Maroon;
+  background-image: -webkit-linear-gradient(#000, #737373);
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   display: inline-block;
@@ -427,7 +426,7 @@ p.note {
 }
 
 .contact li a:hover {
-  color: Gray;
+  color: #ff66ff;
 }
 
 .podbar {

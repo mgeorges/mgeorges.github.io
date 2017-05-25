@@ -1,15 +1,22 @@
 * {
-  /*font-family: 'Andika', sans-serif;
-  border: 1px solid rgba(0, 0, 0, 0.3);*/
+  outline: 0;
+  box-sizing: border-box;
 }
 
-body {
+html, body {
+  height: 100%;
+  width: 100%;
   margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
   background: url("https://0.s3.envato.com/files/125777948/07.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  min-width: 1000px;
+  min-height: 800px;
 }
 
 .nav {
@@ -53,19 +60,17 @@ body {
   border: none;
   font-family: 'Laila', sans-serif;
   text-align: center;
-  /*margin: 200px 30% 400px 30%;*/
-  padding: 200px 30% 400px 30%;
+  padding: 200px 15% 400px 15%;
   border-radius: 50px;
   min-height: 100px;
   min-width: 600px;
   color: Black;
 }
-/*Remove when removing border around all elements*/
+
 #home h2{
   font-size: 200%;
   padding-bottom: 25px;
   margin-top: 0;
-  border: none;
 }
 
 #name {
@@ -88,7 +93,6 @@ h2#title {
 
 .section {
   margin: 0px 30px 30px 30px;
-  /*border-radius: 25px;*/
   min-width: 1000px;
 }
 
@@ -97,14 +101,12 @@ h2#title {
 }
 
 .odd {
-  /*background: rgba(255, 240, 179, .75);*/
   background: rgba(173, 216, 230, .6);
   color: Black;
 }
 
 .even {
   background: rgba(255, 255, 255, .6);
-  /*background: rgba(70, 130, 180, .85);*/
   color: Black;
 }
 
@@ -369,18 +371,23 @@ p.proj {
 }
 
 button {
+  outline: 0;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   padding-bottom: 4px;
   letter-spacing: .1em;
-  border: 2px solid Purple;
+  border-radius: 10px;
+  border: 0;
+  background-image: -webkit-linear-gradient(White, Purple);
 }
 
 button:active {
-  border: 2px solid Orange;
+  background-image: none;
+  background-color: White;
 }
 
 p.note {
+  margin-left: 5px;
   font-size: 50%;
   font-weight: bold;
   text-align: left;

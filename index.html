@@ -4,6 +4,7 @@
     <title>Markos Georges</title>
     <link href="https://fonts.googleapis.com/css?family=Andika|Cabin|Laila|Ubuntu|Muli" rel="stylesheet">
     <link href="./main.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </head>
   <body>
       <ul class="nav">
@@ -13,7 +14,7 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#interests">Interests</a></li>
+        <!--<li><a href="#interests">Interests</a></li>-->
       </ul>
     
     <div id="home">
@@ -28,7 +29,7 @@
       <div class=bio-parts>
         <div class="left-bio">
           <h3>The Basics</h3>
-          <p class="field">Name:</p>
+          <p class="field bolder">Name:</p>
           <p class="attr">Markos Georges</p>
           <p class="field">Age:</p>
           <p class="attr">23</p>
@@ -173,7 +174,7 @@
                 <li>&bull;Computer Networks, Lab (Python)</li>
                 <li>&bull;Theory of Computing, Lab (Haskell)</li>
                 <li>&bull;Database Management Systems, Lab (Java, SQL)</li>
-                <li>&bull;Topics: Cloud Computing - Software Engineering for the Cloud(Ruby on Rails, HTML5, CSS)</li>
+                <li>&bull;Topics: Cloud Computing - Software Engineering for the Cloud(Ruby on Rails, HTML, CSS)</li>
               </ul>
               <p id="head">History Senior Thesis: </p>
               <p class="thesis">The Gambler and the Sportsman - How They Survived Moral Opposition and Classist Aggression</p>
@@ -199,22 +200,88 @@
     
     <div id="skills" class="section even">
       <h2 id="title">Skills</h2>
+      <div class="skills">
+        <div class="col">
+          <h4>Technologies</h4>
+          <p>Eclipse</p>
+          <p>PyCharm</p>
+          <p>QzDev (BoA IDE Python with version control system)</p>
+          <p>RDBMS: Oracle, Netezza, Paraccel</p>
+          <p>SQuirreL SQL Client</p>
+          <p>SandraDB (BoA inhouse NonRDBMS tool)</p>
+          <p>Git</p>
+          <p>Github</p>
+          <p>Mac</p>
+          <p>Windows</p>
+          <p>Microsoft Office: PowerPoint, Excel, Word, Outlook</p>
+        </div>
+        <div class="col">
+          <h4>Languages</h4>
+          <p>Python</p>
+          <p>PL/SQL</p>
+          <p>UNIX</p>
+          <p>Java</p>
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>JavaScript</p>
+          <p>JQuery</p>
+          <p>JSON</p>
+          <p>Ruby</p>
+          <p>Objective C</p>
+        </div>
+      </div>
     </div>
     
-    <div id="projects" class="section odd">
+    <div id="projects" class="section odd last-section">
       <h2 id="title">Projects</h2>
+      <div class="proj">
+        <p class="proj">While at Colgate, I was a part of a team that built a heroku web application project called <a href="groupbuyproject.herokuapp.com/"><b>GroupBuy!</b></a>. In addition to this, I have built terminal commands, shell scripting in UNIX, that allows for the safe removal and restoration of files, this website, and the following conversion calculators.</p>
+        <div class='converters'>
+          <div class='conv'>
+            <h2 align="center">Bit Converter</h2>
+            <div class='single-conv'>
+              <p>Enter an integer: </p>
+              <input type="number" name="int-bit" placeholder="Integer" id='intToBit-input'>
+              <button id='intToBit-btn'>Convert</button>
+              <p id='intToBit-output'></p>
+            </div>
+            <div class='single-conv'>
+              <p>Enter a string of bits: </p>
+              <input type="text" name="bit-string" placeholder="Bit String" id='bitToInt-input'>
+              <button id='bitToInt-btn'>Convert</button>
+              <p id='bitToInt-output'></p>
+            </div>
+          </div>
+          <div class='conv leftie'>
+            <h2 align="center">Roman Numeral Converter</h2>
+            <div class='single-conv'>
+              <p>Enter a Roman Numeral string:</p>
+              <input type="text" name="roman-numeral" placeholder="Roman Numeral" id="rnToInt-input">
+              <button id='rnToInt-btn'>Convert</button>
+              <p id='rnToInt-output'></p>
+            </div>
+            <div class='single-conv'>
+              <p>Enter an Integer: </p>
+              <input type="number" name="int-rn" placeholder="Integer" id="intToRn-input">
+              <button id='intToRn-btn'>Convert</button>
+              <p id="intToRn-output"></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     
-    <!-- include a bucket list in interests-->
+    <!-- include a bucket list in interests
     <div id="interests" class="section even last-section">
       <h2 id="title">Interests</h2>
     </div>
-    
+    -->
     <div class="podbar">
       <ul class="contact">
         <li>Email: <a href="mailto:markosgeorges@gmail.com">markosgeorges@gmail.com</a></li>
-        <li>Phone: <a href="#">1(609)922-4170</a></li>
+        <li>Phone: <a>1(609)922-4170</a></li>
       </ul>
     </div>
+    <script type="text/javascript" src="./converter.js"></script>
   </body>
 </html>

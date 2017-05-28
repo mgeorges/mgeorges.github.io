@@ -191,7 +191,7 @@
             </div>
             <div class="right">
               <p id="location">Audubon, NJ</p>
-              <p class="desc">In high school my focus was on Math and Science. I took solely AP and Honors level classes. I was a part of the National Honor Society, Math Honor Society, School Council, and was chosen to attend the New Jersey Boys' State. I competed on the varsity soccer, wrestling, and track teams. Outside of high school, I played with the South Jersey Elite Barons Club soccer program.</p>
+              <p class="desc">In high school my focus was on Math and Science. I took solely AP and Honors level classes. I was a part of the National Honor Society, Math Honor Society, School Council, and chosen to attend the New Jersey Boys' State. I competed on the varsity soccer, wrestling, and track teams. Outside of high school, I played with the South Jersey Elite Barons Club soccer program.</p>
             </div>
           </div>
         </li>
@@ -235,38 +235,31 @@
     <div id="projects" class="section odd last-section">
       <h2 id="title">Projects</h2>
       <div class="proj">
-        <p class="proj">While at Colgate, I was a part of a team that built a heroku web application project called <b><i>GroupBuy!</i></b> at <b><i>groupbuyproject.heroku.com</i></b>. In addition to this, I have built terminal commands, shell scripting in UNIX, that allows for the safe removal and restoration of files, this website, and the following conversion calculators.</p>
+        <p class="proj">While at Colgate, I was a part of a team that built a heroku web application project called <b><i>GroupBuy!</i></b> at <b><i>groupbuyproject.herokuapp.com</i></b>. In addition to this, I have built terminal commands, shell scripting in UNIX, that allows for the safe removal and restoration of files, this website, and the following number notation converter.</p>
         <div class='converters'>
           <div class='conv'>
-            <h2 align="center">Binary Converter</h2>
-            <div class='single-conv'>
-              <p>Enter an integer: </p>
-              <input type="number" name="int-bit" placeholder="Integer" id='intToBin-input'>
-              <button id='intToBin-btn'>Convert</button>
-              <p class='note'>*Note: The preceding the bit will be 0 if the integer is positive and 1 if the integer is negative</p>
-              <p id='intToBin-output' class='answer'></p>
+            <h2 align="center">Notation Converter</h2>
+            <div class='sect'>
+              <label for='fromType'>From Type: </label>
+              <select name='fromType' id="fromType">
+                <option value='integer'>Integer</option>
+                <option value='roman_numeral'>Roman Numeral</option>
+                <option value='binary'>Binary</option>
+              </select>
+              <label for='toType'>To Type: </label>
+              <select name='toType' id='toType'>
+                <option value='integer'>Integer</option>
+                <option value='roman_numeral'>Roman Numeral</option>
+                <option value='binary'>Binary</option>
+              </select>
             </div>
-            <div class='single-conv'>
-              <p>Enter a string of bits: </p>
-              <input type="text" name="binary-string" placeholder="Bit String" id='binToInt-input'>
-              <button id='binToInt-btn'>Convert</button>
-              <p id='binToInt-output' class='answer'></p>
+            <div class='sect'>
+              <input type='text' name='value' placeholder='Value' id='value'>
             </div>
-          </div>
-          <div class='conv leftie'>
-            <h2 align="center">Roman Numeral Converter</h2>
-            <div class='single-conv'>
-              <p>Enter a Roman Numeral string:</p>
-              <input type="text" name="roman-numeral" placeholder="Roman Numeral" id="rnToInt-input">
-              <button id='rnToInt-btn'>Convert</button>
-              <p id='rnToInt-output' class='answer'></p>
+            <div class='sect'>
+              <button id='convert'>Convert</button>
             </div>
-            <div class='single-conv'>
-              <p>Enter an Integer: </p>
-              <input type="number" name="int-rn" placeholder="Integer" id="intToRn-input">
-              <button id='intToRn-btn'>Convert</button>
-              <p id="intToRn-output" class='roman answer'></p>
-            </div>
+            <div id='converter-output'></div>
           </div>
         </div>
       </div>

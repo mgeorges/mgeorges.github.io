@@ -327,7 +327,12 @@ Converter.prototype.html_display = function(result) {
 		display_html += "<p class='answer center error'>" + result + "</p>";
 	}
 	else {
-		display_html += "<p class='answer center'>" + result + "</p>";
+		if (this.toType == 'roman_numeral') {
+			display_html += "<p class='answer roman center'>" + result + "</p>";
+		}
+		else {
+			display_html += "<p class='answer center'>" + result + "</p>";
+		}
 	}
 	return display_html;
 }

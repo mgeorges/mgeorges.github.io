@@ -338,25 +338,27 @@ p.proj {
 
 .converters {
   display: flex;
+  justify-content: center;
+  margin: 10px 25%;
 }
 
 .conv {
-  width: 50%;
-  display: inline-block;
-  margin: 10px;
+  width: 100%;
+  display: block;
   border: 2px solid Purple;
   border-radius: 10px;
 }
 
 .conv h2 {
-  margin: 5px 5%;
+  width: 100%;
+  margin: 15px 0;
 }
-.single-conv {
+.sect {
   vertical-align: top;
   text-align: center;
-  display: inline-block;
-  width: 49%;
-  margin: 0;
+  display: block;
+  width : 100%;
+  margin-bottom: 10px;
 }
 
 button {
@@ -385,6 +387,16 @@ p.note {
 .answer {
   font-size: 125%;
   font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  margin: 10px 5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: LightGray;
+}
+
+.error {
+  color: red;
 }
 
 .roman {
